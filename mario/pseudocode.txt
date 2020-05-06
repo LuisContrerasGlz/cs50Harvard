@@ -1,0 +1,4 @@
+Aks user for the number of # wanted 
+If height is less than 1 or greater than 8 (or not an integer at all), ask user to select again since it is invalid selection
+Iterate from 1 through height:
+On iteration i, print i hashes and then a newline
