@@ -1,0 +1,22 @@
+1. Longer words means higher reading level
+2. More words per sentence means higher reading level
+3. One such readability test is the Coleman-Liau index. The Coleman-Liau index of a text is designed to output what (U.S.) grade level is needed to understand the text. The formula is:
+   index = 0.0588 * L - 0.296 * S - 15.8
+   L is average number of letters pero 100 words.
+   S is average number of sentences per 100 words.
+
+4. Letters:
+   Count the number of uppercase and lowercase letters in a text.
+   
+5. Words:
+   Count the number of words in a sentence.
+   Any sequence of characters separated by one or more spaces is a word.(First non-space character at start of string is the start of the first word.)
+   
+6. Sentences: 
+   For this problem, any period, exclamation point or question mark indicates a sentence.
+   
+7. Now that you have the values, letters, words and sentences, we can plug them into the Coleman-Liau Index formula.
+8. Be sure to round score to the nearest whole number.
+9. Output should be "Grade X", where X is the grade level.
+10. If ourput is less than 1, output "Before Grade 1".
+11. If output is 16 or higher, output "Grade 16+".
