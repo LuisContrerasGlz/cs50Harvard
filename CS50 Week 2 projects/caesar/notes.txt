@@ -1,0 +1,22 @@
+Encrypted some text by shifting all of the letter of that text by a certain amount.
+Unencrypted text is generally called plaintext. Encrypted text is generally called ciphertext. And the secret used is called a key.
+
+TO DO:
+  1. Get Key - the amount we will shift each of the individual letters by
+     *Ensure Single command-line argument
+     *Make sure argument contains only digit characters
+     *Convert argument to an integer
+  2. Get PlainText
+  3. Encipher
+     *If it´s alphabetic, shift plaintext character by key, preserving case
+     *If it´s not alphabetic, leave the character as-is
+     *We use formula Ci = (Pi + k) % 26
+         * ith character of ciphertext
+         *ith character of plaintext
+         *kEY
+         *Remainder when divided by 26
+     *Convert ASCII to alphabetical index
+     *Shift alphabetiical index using formula
+     *Convert result back to ASCII
+  4. Print ciphertext
+  
