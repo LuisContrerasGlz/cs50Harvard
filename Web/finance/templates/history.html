@@ -1,0 +1,93 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Log In
+{% endblock %}
+
+{% block main %}
+    <table class="talble-striped" width="100%">
+        <thead>
+           <td>Move</td>
+           <td>Date</td>
+           <td>Symbol</td>
+           <td>Name</td>
+           <td>Shares</td>
+           <td>Price</td>
+           <td>Total</td>
+        </thead>
+            <tbody>
+                {% for movement in movements %}
+                    {% if movement["mov_type"]=="B" %}
+                        <tr>
+                            <td>
+                              {{ movement["mov_type"] }}
+                            </td>
+                            <td>
+                              {{ movement["date"] }}
+                            </td>
+                            <td>
+                              {{ movement["symbol"] }}
+                            </td>
+                            <td>
+                              {{ movement["name"] }}
+                            </td>
+                            <td>
+                              {{ movement["shares"] }}
+                            </td>
+                            <td>
+                              {{ movement["price"] }}
+                            </td>
+                            <td>
+                              {{ movement["total"] }}
+                            </td>
+                        </tr>
+                    {% else %}
+                        <tr>
+                            <td bgcolor="#F5A9A9">
+                              {{ movement["mov_type"] }}
+                            </td>
+                            <td bgcolor="#F5A9A9">
+                              {{ movement["date"] }}
+                            </td>
+                            <td bgcolor="#F5A9A9">
+                              {{ movement["symbol"] }}
+                            </td>
+                            <td bgcolor="#F5A9A9">
+                              {{ movement["name"] }}
+                            </td>
+                            <td bgcolor="#F5A9A9">
+                              {{ movement["shares"] }}
+                            </td>
+                            <td bgcolor="#F5A9A9">
+                              {{ movement["price"] }}
+                            </td>
+                            <td bgcolor="#F5A9A9">
+                              {{ movement["total"] }}
+                            </td>
+                        </tr>
+                    {% endif %}
+                {% endfor %}
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td bgcolor="silver">
+                    </td>
+                    <td bgcolor="silver">
+                    </td>
+                    <td bgcolor="silver">
+                    </td>
+                     <td bgcolor="silver">
+                    </td>
+                     <td bgcolor="silver">
+                    </td>
+                    <td bgcolor="silver">
+                      Total
+                    </td>
+                    <td bgcolor="silver">
+                      {{ grand_total }}
+                    </td>
+                </tr>
+             </tfoot>
+    </table>
+{% endblock %}
+
