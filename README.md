@@ -10,6 +10,6 @@ Valid Certificate ID:
 
 ![Cert](./capt.png)
 
-For more certifications and complete profile please check https://www.linkedin.com/in/luis-francisco-contreras-gonzalez-45791715a/
+For more certifications and complete profile please check my LinkedIn: https://www.linkedin.com/in/luis-francisco-contreras-gonzalez-45791715a/
 
 
